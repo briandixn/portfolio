@@ -3,6 +3,7 @@ import {Link,Route} from 'react-router-dom';
 import App from './app'
 import Aboutme from './aboutme';
 import './home.css'
+import booklogo from './screenshot.png'
 export default class Home extends React.Component {
     render(){
         return(
@@ -19,16 +20,18 @@ export default class Home extends React.Component {
                 </p>
                 <h2>Skillset</h2>
                 <ul className="skills-list">
-                  <li >react.js</li>
-                  <li>redux.js</li>
-                  <li>jquery</li>
+                  <li >react.js, redux.js, jquery</li>
+                  <li>node.js, express.js, </li>
+
                 </ul>
               </div>
                 <div className="project-list-container">
-                <ul className="projectlist">
-                  <li>Bookmark</li>
-                  
-                </ul>
+                <div className="projectlist">
+                  <img src= {booklogo}/>
+                  <p>Lyric Creator <br/> This is a Lyric Creator app that was built primarily with react.js, redux.js on the front end. <br/>
+                   with node.js and express.js on the backend. The app uses mongoDB as a database</p>
+
+                </div>
                 </div>
             </div>
         )
