@@ -1,12 +1,15 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {Route, withRouter} from 'react-router-dom';
-
+import {Route, withRouter, Link} from 'react-router-dom';
+import Aboutme from './aboutme';
 import HeaderBar from './header-bar';
 import LandingPage from './landing-page';
 import Dashboard from './dashboard';
 import RegistrationPage from './registration-page';
 import {refreshAuthToken} from '../actions/auth';
+import Contact from './contact';
+import Home from './home';
+
 
 export class App extends React.Component {
     componentDidUpdate(prevProps) {
@@ -39,12 +42,18 @@ export class App extends React.Component {
     }
 
     render() {
+
+
         return (
-            <div className="app">
-                <HeaderBar />
-                <Route exact path="/" component={LandingPage} />
-                <Route exact path="/dashboard" component={Dashboard} />
-                <Route exact path="/register" component={RegistrationPage} />
+            <div>
+
+            <div>
+
+                <Route exact path="/" component={Home}/>
+                <Route exact path="/aboutme" component={Aboutme}/>
+                 <Route exact path="/contact" component={Contact}/>
+            </div>
+
             </div>
         );
     }

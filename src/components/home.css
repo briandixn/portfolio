@@ -1,0 +1,36 @@
+.navitem{
+  position: relative;
+  text-decoration: none;
+  padding: 30px;
+  color: white;
+
+
+}
+
+.navbar{
+background-color:  #0084b4;
+position: relative;
+text-align: center;
+padding: 30px;
+
+}
+
+.herotext{
+  text-align: center;
+  list-style-type: none;
+}
+
+.skills-list{
+  list-style-type: none;
+    text-align: center;
+    padding: 0;
+}
+.projectlist{
+  background: rgb(232, 233, 236);
+  border: 1px solid transparent;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  padding: 8px;
+  list-style-type: none;
+    text-align: center;
+}
